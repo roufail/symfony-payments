@@ -18,7 +18,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
  * gateway shift4 or aci
  * currancy
  * amount
- * you can test it like this example [php bin/console Gateways shift4 USD 1000]
+ * you can test the command it like this example [php bin/console Gateways shift4 USD 1000]
  */
 
 #[AsCommand(
