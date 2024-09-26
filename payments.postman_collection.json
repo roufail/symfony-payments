@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "6da793fc-0358-4b2f-a147-b8acda517c45",
+		"name": "payments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37017258"
+	},
+	"item": [
+		{
+			"name": "shift4 list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/payments/shift4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payments",
+						"shift4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shift4Create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "sk_test_4r3kbIGTI2yc2JxHqLzb2TBP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "sk_test_4r3kbIGTI2yc2JxHqLzb2TBP",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "USD",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description",
+							"type": "text"
+						},
+						{
+							"key": "cardNumber",
+							"value": "5105105105105100",
+							"type": "text"
+						},
+						{
+							"key": "cardExpiryMonth",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "cardExpiryYear",
+							"value": "27",
+							"type": "text"
+						},
+						{
+							"key": "cvv",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/payments/shift4/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payments",
+						"shift4",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aci create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "sk_test_4r3kbIGTI2yc2JxHqLzb2TBP",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "entityId",
+							"value": "8a8294174b7ecb28014b9699220015ca",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "92.00",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "paymentBrand",
+							"value": "VISA",
+							"type": "text"
+						},
+						{
+							"key": "paymentType",
+							"value": "PA",
+							"type": "text"
+						},
+						{
+							"key": "cardNumber",
+							"value": "4200000000000000",
+							"type": "text"
+						},
+						{
+							"key": "cardHolder",
+							"value": "Jane Jones",
+							"type": "text"
+						},
+						{
+							"key": "cardExpiryMonth",
+							"value": "05",
+							"type": "text"
+						},
+						{
+							"key": "cardExpiryYear",
+							"value": "2034",
+							"type": "text"
+						},
+						{
+							"key": "cvv",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/payments/aci/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payments",
+						"aci",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
