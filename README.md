@@ -2,7 +2,7 @@
 - to install the project pull the repo and run command composer install inside the project folder
 - the excute the command **symfony server:start** to run tests use command **php bin/phpunit**
 - **payments.postman_collection** included also to test the api endpoints
-- what i made is the endpoint, command, phpunit tests
+- what i made is the **APIs endpoints**, **command**, **phpunit tests**
 # files i created to look into
   - **src/Controller/API folder**
   - **src/Command/GatewaysCommand**
