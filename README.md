@@ -9,4 +9,4 @@
   - config/services.yaml **(Modified)**
   - src/Gateways to create payment interface, factory, payments files
   - tests/gateways to create tests you can run the tests using **php bin/phpunit**
-    -  you can test the command it like this example [**php bin/console Gateways shift4 USD 1000**] -> shift4 or aci
+  - you can test the command it like this example [**php bin/console Gateways shift4 USD 1000**] -> shift4 or aci
